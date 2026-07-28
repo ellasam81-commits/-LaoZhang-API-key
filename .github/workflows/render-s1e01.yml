@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 110
     env:
-      SEGMIND_API_KEY: \${{ secrets.SEGMIND_API_KEY }}
+      SEGMIND_API_KEY: ${{ secrets.SEGMIND_API_KEY }}
       PYTHONUNBUFFERED: "1"
     steps:
       - name: Guard API key
